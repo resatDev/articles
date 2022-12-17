@@ -1,23 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+    flex-direction: column;
+}
 .articles {
     display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
+    margin-top: 3vh;
 }
-
-
 .article {
-    display: block;
-    width: 350px;
-    border: 1px solid silver;
-    padding: 20px;
-}
-
-.article img {
-    max-width: 348px;
-}
-
-.header {
+    width: 20%;
     display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
+    margin: 0 1em;
+    border: 1px solid #F0F4F6;
+    border-bottom: 4px solid #F0F4F6;
+    cursor: pointer;
+}
+.article .article-info{
+    width: 100%;
+    padding: 1em 2em;
+    background-color: #F0F4F6;
+}
+.article .article-info p{
+    opacity: 0.5;
+    margin-bottom: 0.5em;
+}
+
+.article:hover{
+    border-bottom: 4px solid #fc6c03;
 }
