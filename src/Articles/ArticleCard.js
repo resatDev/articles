@@ -7,8 +7,6 @@ const ArticleCard = ({ title, link, pubDate, thumbnail}) => {
 
   const publicationDate = pubDate?.split(' ')[0];
 
-  console.log(pubDate);
-
   return (
     <div onClick={handleOpenArticle} className="article">
       <img style={{ width: 250, height: 250}} src={thumbnail} alt="article_image" />

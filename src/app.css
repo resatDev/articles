@@ -16,3 +16,8 @@
 .article img {
     max-width: 348px;
 }
+
+.header {
+    display: flex;
+    justify-content: center;
+}
