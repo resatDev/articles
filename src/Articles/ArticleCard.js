@@ -7,10 +7,9 @@ const ArticleCard = ({ title, link, pubDate, thumbnail}) => {
   const publicationDate = pubDate?.split(' ')[0];
   return (
     <div onClick={handleOpenArticle} className="article">
-      <img src={thumbnail} alt="article_image" />
       <div className='article-info'>
+        <h3>{title}</h3>
         <p>{publicationDate}</p>
-        <h1>{title}</h1>
       </div>
     </div>
   );
